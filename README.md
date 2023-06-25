@@ -37,7 +37,15 @@ $ google-chrome requirements_specification.html
 
 ### 要求仕様書の書き方
 
-要求を追加する場合は、`snippets/requirements.adoc`を使用します。
+要求仕様書を追加する場合は、`chapters`ディレクトリに`adoc`ファイルを追加します。
+
+追加したファイルを`requirements_specification.adoc`にincludeします。
+
+```adoc
+include::chapters/something.adoc[]
+```
+
+`adoc`ファイルに要求を追加する場合は、`snippets/requirements.adoc`を使用します。
 
 - `:id:`には、要求のIDを指定します。
 - `:requirement:`には、要求を指定します。
@@ -52,7 +60,7 @@ $ google-chrome requirements_specification.html
 include::snippets/requirement.adoc[]
 ```
 
-仕様を追加する場合は、`snippets/specification.adoc`を使用します。
+`adoc`ファイルに仕様を追加する場合は、`snippets/specification.adoc`を使用します。
 
 - `:id:`には、仕様のIDを指定します。
 - `:specification:`には、仕様を指定します。

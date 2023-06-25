@@ -1,5 +1,7 @@
 # USDM (Universal Specification Describing Manner) Template
 
+[![Deploy](https://github.com/ShotaAk/usdm_template/actions/workflows/deploy.yaml/badge.svg)](https://github.com/ShotaAk/usdm_template/actions/workflows/deploy.yaml)
+
 USDMを適用した要求仕様書をAsciiDocで記述するためのテンプレートです。
 
 ## テンプレートの使用例

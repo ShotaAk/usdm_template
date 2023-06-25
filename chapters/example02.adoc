@@ -27,3 +27,9 @@ include::snippets/specification.adoc[]
 :reason: 要求仕様に対してどれだけ問題定義されているのかをすぐに把握するため
 :explanation: 
 include::snippets/requirement.adoc[]
+
+:id: OUTPUT101
+:requirement: GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい
+:reason: AsciiDocファイルを更新するたびに要求仕様書を自動で生成するため
+:explanation: 
+include::snippets/requirement.adoc[]

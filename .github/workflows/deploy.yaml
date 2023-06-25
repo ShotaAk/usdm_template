@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-gh-pages:
+    runs-on:
+      - ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install asciidoctor
+        run: | 
+          sudo apt install -y asciidoctor
+      - name: Generate publications
+        run: |
+          asciidoctor requirements_specification.adoc -D publications -o index.html
+          cp -r images publications
+
+      - name: Push gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./publications
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

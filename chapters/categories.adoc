@@ -1,0 +1,58 @@
+== カテゴリ一覧
+
+[cols="1, 2, 2"]
+|===
+| 記号 | 親カテゴリ| 小カテゴリ
+
+| INPUT | 主機能 | 入力処理（Input）
+
+| OUTPUT | 主機能 | 出力処理（Output）
+
+| TRANS | 主機能 | 変換処理（Transformation）
+
+| CONT | 主機能 | 制御処理（Control）
+
+| UI | 主機能 | 表示/UI処理（UI）
+
+| DIAG | 主機能 | 診断処理（Diagnosis）
+
+| QFUNC | 品質特性 
+| 機能性（Functionability） +
+合目的性 +
+正確性 +
+接続性 +
+整合性 +
+セキュリティ
+
+| QRELI | 品質特性 
+| 信頼性（Reliability） +
+成熟性 +
+障害許容性 +
+回復性
+
+| QUSAB | 品質特性 
+| 使用性（Usability） +
+理解性 +
+習得性 +
+操作性
+
+| QEFFI | 品質特性 
+| 効率性（Efficiency） +
+実行効率性 +
+資源効率性
+
+| QMAIN | 品質特性 
+| 保守性（Maintainability） +
+解析性 +
+変更作業性 +
+安定性 +
+試験性
+
+| QPORT | 品質特性 
+| 移植性（Portability） +
+環境適応性 +
+移植作業性 +
+規格準拠性 +
+置換性
+
+|===

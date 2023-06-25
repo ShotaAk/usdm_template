@@ -1,0 +1,74 @@
+
+== テンプレートの主機能
+
+:id: INPUT001
+:requirement: AsciiDocを使ったテンプレートにしたい
+:reason: AsciiDocは + \
+* markdownよりも表現能力が高いため + \
+* GitHub ActionsなどのCI/CDツールでHTMLファイルを自動生成できるため
+:explanation: AsciiDocのコンパイル環境を用意しなければならないというデメリットもある
+include::snippets/requirement.adoc[]
+
+:id: INPUT002
+:requirement: シンプルなディレクトリ構成にしたい
+:reason: ディレクトリ構成が複雑だと、テンプレートの使い方を覚えるのが難しくなるため
+:explanation: 
+include::snippets/requirement.adoc[]
+
+:id: INPUT002-01
+:specification: テンプレートの最上位層に置くadocファイルはrequirements_specification.adocのみとする
+include::snippets/specification.adoc[]
+
+:id: INPUT002-02
+:specification: chaptersディレクトリに子ページを置くこと
+include::snippets/specification.adoc[]
+
+:id: INPUT002-03
+:specification: imagesディレクトリに画像を置くこと
+include::snippets/specification.adoc[]
+
+:id: INPUT002-04
+:specification: imagesディレクトリをimagesdir属性に設定すること
+include::snippets/specification.adoc[]
+
+これにより、`\image:画像.png[]`のように記述するだけで画像を表示できる
+
+image:sample_image.png[]
+
+:id: TRANS001
+:requirement: マクロを用意して要求仕様書の枠組みを簡単に書きたい
+:reason: AsciiDocの記法を最小限にするため 
+:explanation: AsciiDocの表の書き方は、機能が良い反面、記法が複雑であるため
+include::snippets/requirement.adoc[]
+
+:id: TRANS001-01
+:specification: 要求のマクロとしてsnippets/requirement.adocを用意する
+include::snippets/specification.adoc[]
+
+:id: TRANS001-02
+:specification: 仕様のマクロとしてsnippets/specification.adocを用意する
+include::snippets/specification.adoc[]
+
+:id: OUTPUT001
+:requirement: USDMを表現したい
+:reason: USDMを使った要求仕様書を作成するのがこのテンプレートの目的であるため
+:explanation: 
+include::snippets/requirement.adoc[]
+
+:id: OUTPUT001-01
+:specification: 要求、理由、説明が記載できる
+include::snippets/specification.adoc[]
+
+:id: OUTPUT001-02
+:specification: 要求と仕様のそれぞれにIDを付与できる
+include::snippets/specification.adoc[]
+
+:id: UI001
+:requirement: 要求と仕様のIDをAsciiDocのアンカーに設定し、ページ内リンクを簡単に貼れること
+:reason: 仕様書内で、ある仕様が別の仕様を参照することがよくあるため
+:explanation: AsciiDocのアンカーを使うことで"\<<ID>>"のような記法でリンクを貼れる
+include::snippets/requirement.adoc[]
+
+:id: UI001-01
+:specification: マクロファイル（<<TRANS001>>で定義したもの）にアンカーを設定すること
+include::snippets/specification.adoc[]

@@ -1,0 +1,24 @@
+
+include::open_issue_github.adoc[]
+
+// anchorをつけることで、<<id>>でページ内リンクを作れる
+[[{id}]]
+
+=== [{id}]{requirement} {open_issue}
+
+
+[cols="1,5"]
+|===
+| 要求の補足 | 内容 
+
+| 理由 | {reason}
+
+| 説明 | {explanation}
+|===
+
+// スニペット連続使用時の入力漏れを防ぐため、リファレンスを初期化する
+:id: 
+:requirement: 
+:reason: 
+:explanation: 
+// :open_issue: 

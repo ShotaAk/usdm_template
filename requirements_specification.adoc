@@ -1,0 +1,18 @@
+
+= AsciiDocを使った要求仕様書のテンプレートの要求仕様書
+// ここには要求仕様書のバージョンや目次設定などのメタ情報を記載します
+v1.0
+:toc: left
+:toclevels: 4
+:icons: font
+
+:imagesdir: images/
+
+// Issueの投稿先となるGitHubリポジトリ
+:github-repo: https://github.com/ShotaAk/usdm_template
+
+include::chapters/example01.adoc[]
+
+include::chapters/example02.adoc[]
+
+include::chapters/categories.adoc[]

@@ -28,6 +28,14 @@ include::snippets/specification.adoc[]
 :explanation: 
 include::snippets/requirement.adoc[]
 
+:id: UI102-01
+:specification: Issue検索しadocファイルを書き換えるスクリプトファイルを用意すること
+include::snippets/specification.adoc[]
+
+:id: UI102-02
+:specification: スクリプトには、検索対象のリポジトリ名とadocファイルへのパスを指定できること
+include::snippets/specification.adoc[]
+
 :id: OUTPUT101
 :requirement: GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい
 :reason: AsciiDocファイルを更新するたびに要求仕様書を自動で生成するため

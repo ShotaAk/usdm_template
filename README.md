@@ -8,6 +8,12 @@ USDMを適用した要求仕様書をAsciiDocで記述するためのテンプ�
 
 - [USDM Templateの要求仕様書](https://shotaak.github.io/usdm_template/)
 
+## テンプレートの特徴
+
+- AsciiDocでUSDMを適用した要求仕様書を記述できる
+- 初めてAsciiDocを触る人でも記述できるシンプルな構成
+- 要求と仕様の末尾には、GitHub Issue投稿用のリンクが生成される
+
 ## 使い方
 
 asciidoctorのインストール
@@ -70,12 +76,6 @@ include::snippets/requirement.adoc[]
 :specification: テンプレートの最上位層に置くadocファイルはrequirements_specification.adocのみとする
 include::snippets/specification.adoc[]
 ```
-
-## テンプレートの特徴
-
-- AsciiDocでUSDMを適用した要求仕様書を記述できる
-- 初めてAsciiDocを触る人でも記述できるシンプルな構成
-- 要求と仕様の末尾には、GitHub Issue投稿用のリンクが生成される
 
 ## テンプレートの仕様
 

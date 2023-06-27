@@ -1,5 +1,5 @@
 
-include::open_issue_github.adoc[]
+include::open_issue.adoc[]
 
 // anchorをつけることで、<<id>>でページ内リンクを作れる
 * [[{id}]] [{id}] {specification} {open_issue}

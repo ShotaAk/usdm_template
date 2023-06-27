@@ -8,7 +8,8 @@ v1.0
 
 :imagesdir: images/
 
-// Issueの投稿先となるGitHubリポジトリ
+// Issueの投稿先となるリポジトリ
+// セットしない場合、Issueの投稿ボタンが表示されません
 :github-repo: https://github.com/ShotaAk/usdm_template
 
 include::chapters/example01.adoc[]

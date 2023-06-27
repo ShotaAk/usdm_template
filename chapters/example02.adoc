@@ -10,15 +10,19 @@ include::snippets/requirement.adoc[]
 :specification: 要求仕様書マクロファイル（<<TRANS001>>で定義したもの）に、投稿用のリンクを設定すること
 include::snippets/specification.adoc[]
 
-:id: UI101-02
+:id: UI101-11
 :specification: 最上位層のadocファイル（<<INPUT002-01>>で定義したもの）で投稿先を設定できること
 include::snippets/specification.adoc[]
 
-:id: UI101-03
+:id: UI101-12
+:specification: 投稿先がセットされていない場合、リンクが表示されないこと
+include::snippets/specification.adoc[]
+
+:id: UI101-21
 :specification: 投稿するIssueのタイトルは[{要求また仕様のID}]で始まること
 include::snippets/specification.adoc[]
 
-:id: UI101-04
+:id: UI101-31
 :specification: 投稿用のリンクを開くと、新しいウィンドウで投稿画面が表示されること
 include::snippets/specification.adoc[]
 

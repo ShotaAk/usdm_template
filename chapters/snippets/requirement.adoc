@@ -1,12 +1,15 @@
 
 include::new_issue.adoc[]
-include::open_issues_to_link.adoc[]
 
 // anchorをつけることで、<<id>>でページ内リンクを作れる
 [[{id}]]
 
-=== [{id}]{requirement} {new_issue} {open_issue_links}
+=== [{id}]{requirement} {new_issue}
 
+// Issueがある場合は、Issueへのリンクを表示する
+ifdef::open_issues[]
+{open_issues}
+endif::[]
 
 [cols="1,5"]
 |===

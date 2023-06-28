@@ -1,9 +1,11 @@
 
 include::new_issue.adoc[]
+include::open_issues_to_link.adoc[]
 
 // anchorをつけることで、<<id>>でページ内リンクを作れる
-* [[{id}]] [{id}] {specification} {new_issue}
+* [[{id}]] [{id}] {specification} {new_issue} {open_issue_links}
 
 // スニペット連続使用時の入力漏れを防ぐため、リファレンスを初期化する
-:id: 
-:specification: 
+:!id:
+:!specification:
+:!open_issues:

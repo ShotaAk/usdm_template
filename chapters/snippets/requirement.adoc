@@ -1,11 +1,15 @@
 
-include::open_issue.adoc[]
+include::new_issue.adoc[]
 
 // anchorをつけることで、<<id>>でページ内リンクを作れる
 [[{id}]]
 
-=== [{id}]{requirement} {open_issue}
+=== [{id}]{requirement} {new_issue}
 
+// Issueがある場合は、Issueへのリンクを表示する
+ifdef::open_issues[]
+{open_issues}
+endif::[]
 
 [cols="1,5"]
 |===
@@ -16,9 +20,9 @@ include::open_issue.adoc[]
 | 説明 | {explanation}
 |===
 
-// スニペット連続使用時の入力漏れを防ぐため、リファレンスを初期化する
-:id: 
-:requirement: 
-:reason: 
-:explanation: 
-// :open_issue: 
+// スニペット連続使用時の入力漏れを防ぐため、attributeをunsetする
+:!id:
+:!requirement:
+:!reason:
+:!explanation:
+:!open_issues:

@@ -16,7 +16,7 @@ include::snippets/requirement.adoc[]
 include::snippets/requirement.adoc[]
 
 :id: INPUT002-01
-:specification: テンプレートの最上位層に置くadocファイルはrequirements_specification.adocのみとする
+:specification: テンプレートの最上位層に置くadocファイルはrequirements_specifications.adocのみとする
 include::snippets/specification.adoc[]
 
 :id: INPUT002-02

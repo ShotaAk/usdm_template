@@ -32,7 +32,7 @@ AsciiDocファイルをコンパイルからHTMLファイルを生成
 
 ```sh
 $ cd usdm_template
-$ asciidoctor requirements_specification.adoc
+$ asciidoctor requirements_specifications.adoc
 ```
 
 生成されたHTMLファイルをブラウザで開く
@@ -45,7 +45,7 @@ $ google-chrome requirements_specification.html
 
 要求仕様書を追加する場合は、`chapters`ディレクトリに`adoc`ファイルを追加します。
 
-追加したファイルを`requirements_specification.adoc`にincludeします。
+追加したファイルを`requirements_specifications.adoc`にincludeします。
 
 ```adoc
 include::chapters/something.adoc[]
@@ -59,10 +59,10 @@ include::chapters/something.adoc[]
 - `:explanation:`には、要求の説明を指定します。
 
 ```adoc
-:id: INPUT001
-:requirement: シンプルなディレクトリ構成にしたい
-:reason: ディレクトリ構成が複雑だと、テンプレートを使いこなせないため
-:explanation: ディレクトリとは、リポジトリのルートにあるディレクトリを指す
+:id: 要求のID
+:requirement: 要求
+:reason: 要求の理由
+:explanation: 要求の説明
 include::snippets/requirement.adoc[]
 ```
 
@@ -72,8 +72,8 @@ include::snippets/requirement.adoc[]
 - `:specification:`には、仕様を指定します。
 
 ```adoc
-:id: INPUT002-01
-:specification: テンプレートの最上位層に置くadocファイルはrequirements_specification.adocのみとする
+:id: 仕様のID
+:specification: 仕様
 include::snippets/specification.adoc[]
 ```
 

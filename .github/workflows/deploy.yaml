@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate publications
         run: |
-          asciidoctor requirements_specification.adoc -D publications -o index.html
+          asciidoctor requirements_specifications.adoc -D publications -o index.html
           cp -r images publications
 
       - name: Push gh-pages branch

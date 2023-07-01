@@ -20,6 +20,11 @@ jobs:
       - name: Install asciidoctor
         run: | 
           sudo apt install -y asciidoctor
+
+      - name: Append open issues to AsciiDoc files
+        run: |
+          ls chapters/*.adoc | xargs -i .scripts/append_oppen_issues.py {} ShotaAk usdm_template
+
       - name: Generate publications
         run: |
           asciidoctor requirements_specifications.adoc -D publications -o index.html

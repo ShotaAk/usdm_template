@@ -23,7 +23,7 @@ jobs:
 
       - name: Append open issues to AsciiDoc files
         run: |
-          ls chapters/*.adoc | xargs -i .scripts/append_oppen_issues.py {} ShotaAk usdm_template
+          ls chapters/*.adoc | xargs -i .scripts/append_oppen_issues.py {} ${{ github.repository }}
 
       - name: Generate publications
         run: |

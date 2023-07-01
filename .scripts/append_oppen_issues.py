@@ -23,13 +23,11 @@ def get_spec_id_matching_github_issues(spec_id, open_issues):
 def main():
     parser = argparse.ArgumentParser(description='Append GitHub issue URLs to .adoc files')
     parser.add_argument('adoc_file', type=str, help='AsciiDoc file path')
-    parser.add_argument('owner', type=str, help='GitHub repository owner')
-    parser.add_argument('repository', type=str, help='GitHub repository name')
+    parser.add_argument('github_repo', type=str, help='GitHub repository name. e.g. "owner/repository"')
 
     args = parser.parse_args()
     adoc_file_path = args.adoc_file
-    owner = args.owner
-    repository = args.repository
+    github_repo = args.github_repo
 
     # .adocファイルの内容を読み込む
     with open(adoc_file_path, "r") as file:
@@ -39,7 +37,7 @@ def main():
     spec_id_list = get_spec_id_list(adoc_content)
 
     # GitHubリポジトリからオープンなIssueを抽出
-    open_issues = get_open_issues(owner, repository)
+    open_issues = get_open_issues(github_repo)
 
     for spec_id in spec_id_list:
         # 仕様IDが一致知るIssueを抽出

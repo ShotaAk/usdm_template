@@ -1,8 +1,8 @@
 
 import requests
 
-def get_open_issues(repo_owner, repo_name, access_token=""):
-    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/issues"
+def get_open_issues(github_repo, access_token=""):
+    url = f"https://api.github.com/repos/{github_repo}/issues"
 
     headers = {}
     if access_token != "":

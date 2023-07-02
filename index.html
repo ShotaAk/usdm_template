@@ -459,9 +459,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_githubと連携する機能">GitHubと連携する機能</a>
 <ul class="sectlevel2">
-<li><a href="#_ui101githubへissueを新規投稿するためのリンクを各要求と仕様の末尾に配置したい">[UI101]GitHubへIssueを新規投稿するためのリンクを、各要求と仕様の末尾に配置したい <span class="icon"><i class="fa fa-github"></i></span></a></li>
-<li><a href="#_ui102githubに投稿されているオープンなissueを要求仕様idで検索し該当したissueへのリンクを各要求仕様に貼りたい">[UI102]GitHubに投稿されているオープンなIssueを要求仕様IDで検索し、該当したIssueへのリンクを各要求仕様に貼りたい <span class="icon"><i class="fa fa-github"></i></span></a></li>
-<li><a href="#_output101github_workflowを使ってgithub_pageに要求仕様書を出力したい">[OUTPUT101]GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい <span class="icon"><i class="fa fa-github"></i></span></a></li>
+<li><a href="#_github001githubへissueを新規投稿するためのリンクを各要求と仕様の末尾に配置したい">[GITHUB001]GitHubへIssueを新規投稿するためのリンクを、各要求と仕様の末尾に配置したい <span class="icon"><i class="fa fa-github"></i></span></a></li>
+<li><a href="#_github011githubに投稿されているオープンなissueを要求仕様idで検索し該当したissueへのリンクを各要求仕様に貼りたい">[GITHUB011]GitHubに投稿されているオープンなIssueを要求仕様IDで検索し、該当したIssueへのリンクを各要求仕様に貼りたい <span class="icon"><i class="fa fa-github"></i></span></a></li>
+<li><a href="#_github021github_workflowを使ってgithub_pageに要求仕様書を出力したい">[GITHUB021]GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい <span class="icon"><i class="fa fa-github"></i></span></a></li>
+<li><a href="#_github031pull_requestの作成をトリガーにgithub_workflowを実行しprのコメントに要求仕様書のpdfを添付したい">[GITHUB031]Pull Requestの作成をトリガーにGitHub Workflowを実行し、PRのコメントに要求仕様書のPDFを添付したい <span class="icon"><i class="fa fa-github"></i></span></a></li>
 </ul>
 </li>
 <li><a href="#_カテゴリ一覧">カテゴリ一覧</a></li>
@@ -697,11 +698,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_githubと連携する機能">GitHubと連携する機能</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ここではGitHubとの連携機能に関する要求仕様を記載する</p>
+</li>
+<li>
+<p>要求仕様IDはGITHUB**とする</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p><a id="UI101"></a></p>
+<p><a id="GITHUB001"></a></p>
 </div>
 <div class="sect2">
-<h3 id="_ui101githubへissueを新規投稿するためのリンクを各要求と仕様の末尾に配置したい">[UI101]GitHubへIssueを新規投稿するためのリンクを、各要求と仕様の末尾に配置したい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI101%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
+<h3 id="_github001githubへissueを新規投稿するためのリンクを各要求と仕様の末尾に配置したい">[GITHUB001]GitHubへIssueを新規投稿するためのリンクを、各要求と仕様の末尾に配置したい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB001%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -727,47 +738,44 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI101-01"></a> [UI101-01] 要求仕様書マクロファイル（<a href="#TRANS001">[TRANS001]</a>で定義したもの）に、投稿用のリンクを設定すること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI101-01%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB001-01"></a> [GITHUB001-01] 要求仕様書マクロファイル（<a href="#TRANS001">[TRANS001]</a>で定義したもの）に、投稿用のリンクを設定すること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB001-01%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI101-11"></a> [UI101-11] 最上位層のadocファイル（<a href="#INPUT002-01">[INPUT002-01]</a>で定義したもの）で投稿先を設定できること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI101-11%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB001-11"></a> [GITHUB001-11] 最上位層のadocファイル（<a href="#INPUT002-01">[INPUT002-01]</a>で定義したもの）で投稿先を設定できること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB001-11%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI101-12"></a> [UI101-12] 投稿先がセットされていない場合、リンクが表示されないこと <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI101-12%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB001-12"></a> [GITHUB001-12] 投稿先がセットされていない場合、リンクが表示されないこと <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB001-12%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI101-21"></a> [UI101-21] 投稿するIssueのタイトルは[{要求また仕様のID}]で始まること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI101-21%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB001-21"></a> [GITHUB001-21] 投稿するIssueのタイトルは[{要求また仕様のID}]で始まること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB001-21%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI101-31"></a> [UI101-31] 投稿用のリンクを開くと、新しいウィンドウで投稿画面が表示されること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI101-31%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB001-31"></a> [GITHUB001-31] 投稿用のリンクを開くと、新しいウィンドウで投稿画面が表示されること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB001-31%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><a id="UI102"></a></p>
+<p><a id="GITHUB011"></a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ui102githubに投稿されているオープンなissueを要求仕様idで検索し該当したissueへのリンクを各要求仕様に貼りたい">[UI102]GitHubに投稿されているオープンなIssueを要求仕様IDで検索し、該当したIssueへのリンクを各要求仕様に貼りたい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI102%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
-<div class="paragraph">
-<p><a href="https://github.com/ShotaAk/usdm_template/issues/2" title="UI102 issue検索用のテストissue２つ目">Issue #2</a>, <a href="https://github.com/ShotaAk/usdm_template/issues/1" title="UI102 issue検索用のテストissue">Issue #1</a>,</p>
-</div>
+<h3 id="_github011githubに投稿されているオープンなissueを要求仕様idで検索し該当したissueへのリンクを各要求仕様に貼りたい">[GITHUB011]GitHubに投稿されているオープンなIssueを要求仕様IDで検索し、該当したIssueへのリンクを各要求仕様に貼りたい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB011%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -793,23 +801,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI102-01"></a> [UI102-01] Issue検索しadocファイルを書き換えるスクリプトファイルを用意すること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI102-01%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB011-01"></a> [GITHUB011-01] Issue検索しadocファイルを書き換えるスクリプトファイルを用意すること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB011-01%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="UI102-02"></a> [UI102-02] スクリプトには、検索対象のリポジトリ名とadocファイルへのパスを指定できること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=UI102-02%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+<p><a id="GITHUB011-02"></a> [GITHUB011-02] スクリプトには、検索対象のリポジトリ名とadocファイルへのパスを指定できること <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB011-02%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><a id="OUTPUT101"></a></p>
+<p><a id="GITHUB021"></a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_output101github_workflowを使ってgithub_pageに要求仕様書を出力したい">[OUTPUT101]GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=OUTPUT101%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
+<h3 id="_github021github_workflowを使ってgithub_pageに要求仕様書を出力したい">[GITHUB021]GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB021%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -832,6 +840,41 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><a id="GITHUB031"></a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_github031pull_requestの作成をトリガーにgithub_workflowを実行しprのコメントに要求仕様書のpdfを添付したい">[GITHUB031]Pull Requestの作成をトリガーにGitHub Workflowを実行し、PRのコメントに要求仕様書のPDFを添付したい <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB031%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">要求の補足</th>
+<th class="tableblock halign-left valign-top">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">理由</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">レビュアーが要求仕様書を確認する手間を省くため</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">説明</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a id="GITHUB031-01"></a> [GITHUB031-01] asciidoctor-pdfのdockerイメージを使用してPDFを生成する <a href="https://github.com/ShotaAk/usdm_template/issues/new?title=GITHUB031-01%20" target="read-later"><span class="icon"><i class="fa fa-github"></i></span></a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -940,7 +983,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-07-01 06:32:31 UTC
+Last updated 2023-07-02 08:32:16 UTC
 </div>
 </div>
 </body>

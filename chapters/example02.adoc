@@ -1,47 +1,60 @@
 == GitHubと連携する機能
 
-:id: UI101 
+- ここではGitHubとの連携機能に関する要求仕様を記載する
+- 要求仕様IDはGITHUB**とする
+
+:id: GITHUB001 
 :requirement: GitHubへIssueを新規投稿するためのリンクを、各要求と仕様の末尾に配置したい
 :reason: 要求仕様について改善提案や質問を簡単に投稿したいため
 :explanation: 
 include::snippets/requirement.adoc[]
 
-:id: UI101-01
+:id: GITHUB001-01
 :specification: 要求仕様書マクロファイル（<<TRANS001>>で定義したもの）に、投稿用のリンクを設定すること
 include::snippets/specification.adoc[]
 
-:id: UI101-11
+:id: GITHUB001-11
 :specification: 最上位層のadocファイル（<<INPUT002-01>>で定義したもの）で投稿先を設定できること
 include::snippets/specification.adoc[]
 
-:id: UI101-12
+:id: GITHUB001-12
 :specification: 投稿先がセットされていない場合、リンクが表示されないこと
 include::snippets/specification.adoc[]
 
-:id: UI101-21
+:id: GITHUB001-21
 :specification: 投稿するIssueのタイトルは[{要求また仕様のID}]で始まること
 include::snippets/specification.adoc[]
 
-:id: UI101-31
+:id: GITHUB001-31
 :specification: 投稿用のリンクを開くと、新しいウィンドウで投稿画面が表示されること
 include::snippets/specification.adoc[]
 
-:id: UI102 
+:id: GITHUB011
 :requirement: GitHubに投稿されているオープンなIssueを要求仕様IDで検索し、該当したIssueへのリンクを各要求仕様に貼りたい
 :reason: 要求仕様に対してどれだけ問題定義されているのかをすぐに把握するため
 :explanation: 
 include::snippets/requirement.adoc[]
 
-:id: UI102-01
+:id: GITHUB011-01
 :specification: Issue検索しadocファイルを書き換えるスクリプトファイルを用意すること
 include::snippets/specification.adoc[]
 
-:id: UI102-02
+:id: GITHUB011-02
 :specification: スクリプトには、検索対象のリポジトリ名とadocファイルへのパスを指定できること
 include::snippets/specification.adoc[]
 
-:id: OUTPUT101
+:id: GITHUB021
 :requirement: GitHub Workflowを使って、GitHub Pageに要求仕様書を出力したい
 :reason: AsciiDocファイルを更新するたびに要求仕様書を自動で生成するため
 :explanation: 
 include::snippets/requirement.adoc[]
+
+:id: GITHUB031
+:requirement: Pull Requestの作成をトリガーにGitHub Workflowを実行し、PRのコメントに要求仕様書のPDFを添付したい
+:reason: レビュアーが要求仕様書を確認する手間を省くため
+:explanation: 
+include::snippets/requirement.adoc[]
+
+:id: GITHUB031-01
+:specification: asciidoctor-pdfのdockerイメージを使用してPDFを生成する
+include::snippets/specification.adoc[]

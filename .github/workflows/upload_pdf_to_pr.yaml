@@ -1,0 +1,43 @@
+name: Upload PDF to pull request
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  upload-pdf-to-pr:
+    permissions:
+      # Required to upload/save artifact, otherwise you'll get
+      # "Error: Resource not accessible by integration"
+      contents: write
+      # Required to post comment, otherwise you'll get
+      # "Error: Resource not accessible by integration"
+      pull-requests: write
+
+    runs-on:
+      - ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Append open issues to AsciiDoc files
+        run: |
+          ls chapters/*.adoc | xargs -i .scripts/append_oppen_issues.py {} ${{ github.repository }}
+
+      - name: Generate PDF file
+        run: |
+          docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf \
+            -a scripts=cjk -a pdf-theme=default-with-fallback-font requirements_specifications.adoc
+
+      - name: Pull request artifacts
+        uses: gavv/pull-request-artifacts@v1.0.0
+        with:
+          # Commit hash that triggered PR
+          commit: ${{ github.event.pull_request.head.sha }}
+
+          # Token for current repo (used to post PR comment)
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Whitespace-separated list of files to upload
+          artifacts: |
+            requirements_specifications.pdf

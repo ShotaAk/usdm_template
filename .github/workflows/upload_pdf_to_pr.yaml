@@ -21,7 +21,15 @@ jobs:
           docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf \
             -a scripts=cjk -a pdf-theme=default-with-fallback-font requirements_specifications.adoc
 
-      - uses: actions/upload-artifact@v3
+      - name: Pull request artifacts
+        uses: gavv/pull-request-artifacts@v1.0.0
         with:
-          name: pdf-artifact
-          path: requirements_specifications.pdf
+          # Commit hash that triggered PR
+          commit: ${{ github.event.pull_request.head.sha }}
+
+          # Token for current repo (used to post PR comment)
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Whitespace-separated list of files to upload
+          artifacts: |
+            requirements_specifications.pdf

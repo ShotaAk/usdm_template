@@ -6,7 +6,7 @@ on:
 
 jobs:
   upload-pdf-to-pr:
-     permissions:
+    permissions:
       # Required to upload/save artifact, otherwise you'll get
       # "Error: Resource not accessible by integration"
       contents: write
